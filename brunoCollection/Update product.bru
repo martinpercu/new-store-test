@@ -1,0 +1,19 @@
+meta {
+  name: Update product
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3000/api/v1/products/443
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "New product",
+    "price": 1500,
+    "image": "https://avatars.githubusercontent.com/u/5837939"
+  }
+}
