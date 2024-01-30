@@ -1,0 +1,19 @@
+meta {
+  name: Create user
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/api/v1/users
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "New product",
+    "price": 200,
+    "image": "https://avatars.githubusercontent.com/u/5837939"
+  }
+}
